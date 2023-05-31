@@ -210,10 +210,10 @@ function nuevaCita(e) {
         administrarCitas.agregarCita({...citaObj});
 
         //Insertar Registro en indexDB
-        const trasaction = DB.trasaction(['citas'],'readwrite');
-        const  objectStore = trasaction.objectStore('citas');
+        const transaction = DB.transaction(['citas'],'readwrite');
+        const  objectStore = transaction.objectStore('citas');
         objectStore.add(citaObj);
-        trasaction.oncomplete = function(){
+        transaction.oncomplete = function(){
             console.log('cita agregada')
             // Mostrar mensaje de que todo esta bien...
             ui.imprimirAlerta('Se agregó correctamente')
