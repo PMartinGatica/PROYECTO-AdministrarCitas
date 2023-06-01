@@ -15,6 +15,19 @@ body {
   background-position: center;
 }
 
+.logo {
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.logo img {
+  opacity: 0.6; /* Ajusta el valor de opacidad según lo desees */
+  max-width: 150px; /* Ajusta el tamaño máximo según tus necesidades */
+  border-radius: 50%; /* Agrega bordes redondeados */
+  mix-blend-mode: multiply; /* Permite que la imagen se mimetice con el fondo */
+}
+
+
 .titulo {
   font-weight: bold;
   font-size: 3rem;
